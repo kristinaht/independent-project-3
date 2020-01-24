@@ -1,15 +1,7 @@
-// function beepBoopGame(number){  
-//   numberRange = [];
-//   for(index = 0; index <= number; index++){
-//     numberRange.push(index);
-//     return (numberRange);
-// }
-// }
-
 $(document).ready(function() {
   $("form#form").submit(function(event) {
     event.preventDefault();
-    var numberInput =$("input#number").val();
+    var numberInput =parseInt($("input#number").val());
     
     // var numberArr = numberInput.split("");
     
@@ -29,10 +21,9 @@ function beepBoop(numberInput){
   for(var index=0; index<=numberInput;index++){
     if(numberInput) {
       numberRange.push(index);
-      return numberRange;
-    
     }
   }
+  return numberRange;
 }
 
 
