@@ -1,11 +1,36 @@
-$(document).ready(function(){
-  $("form#form").submit(function(event){
+// function beepBoopGame(number){  
+//   numberRange = [];
+//   for(index = 0; index <= number; index++){
+//     numberRange.push(index);
+//     return (numberRange);
+// }
+// }
+
+$(document).ready(function() {
+  $("form#form").submit(function(event) {
     event.preventDefault();
-    var number = ($("#number").val());
-    var numArray = number.split("");
-    var exceptions= [1, 2, 3]; 
-    var result = beepBoopGame(number);
-    $(".result").text(result);
+    var numberInput =$("input#number").val();
+    console.log(numberInput);
+    var numberArr = numberInput.split("");
+    console.log(numberArr);
+    //call beepBop() function on each word in the numberArr
+    // for(var i = 0; i < numberArr.length; i++) {
+    //   $(".output").append(" " + translate(wordArr[i]));
+    // }
+  });
+});
+// $(document).ready(function(){
+//   $("form#form").submit(function(event){
+//     event.preventDefault();
+//     var number = $("input#number").toString().val();
+//     console.log(number);
+//     var numArray =number.split("");
+
+// console.log(numArray);
+
+//     var exceptions= [1, 2, 3]; 
+    // var result = beepBoopGame(number);
+    // $(".result").text(result);
   
 
     // var result = numArray;
@@ -19,15 +44,9 @@ $(document).ready(function(){
 
      
       
-  });
-});
-function beepBoopGame(number){  
-  numberRange = [];
-  for(index = 0; index <= number; index++){
-    numberRange.push(index);
-    return (numberRange);
-}
-}
+//   });
+// });
+
 
 // function findExceptions(numArray,exceptions){
 //   for(var index = 0; index<numArray.length; index++){
