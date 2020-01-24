@@ -20,62 +20,12 @@ function beepBoop(numberInput){
   var numberRange=[];
   
   for(var index=0; index<=numberInput;index++){
-    for(numberRange[index]){
-      if(numberRange[index].split() === 1)
-        numberRange[index].push("beep");
-    }
-    }if(numberInput) {
+    var exceptions=[1,2,3];
+    if(numberRange[index].includes(exceptions[0])){
+      numberRange[index].push("beep");
+    }else {
       numberRange.push(index);
     }
+    return numberRange;
   }
-  return numberRange;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-// $(document).ready(function(){
-//   $("form#form").submit(function(event){
-//     event.preventDefault();
-//     var number = $("input#number").toString().val();
-//     console.log(number);
-//     var numArray =number.split("");
-
-// console.log(numArray);
-
-//     var exceptions= [1, 2, 3]; 
-    // var result = beepBoopGame(number);
-    // $(".result").text(result);
-  
-
-    // var result = numArray;
-    // $(".result").text(result);
-    // var returnResult=function(number){
-    //   for (var index = 1; index < number; index ++){
-    //     // return(index);
-    //     $(".result").text(returnResult);
-    //   }
-    //   }
-
-     
-      
-//   });
-// });
-
-
-// function findExceptions(numArray,exceptions){
-//   for(var index = 0; index<numArray.length; index++){
-//     if(numArray.includes(exceptions[index])) {
-//       return index;
-//     }
-//   }
-// }
-
