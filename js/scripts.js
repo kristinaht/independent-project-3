@@ -18,8 +18,13 @@ $(document).ready(function() {
 
 function beepBoop(numberInput){
   var numberRange=[];
+  
   for(var index=0; index<=numberInput;index++){
-    if(numberInput) {
+    for(numberRange[index]){
+      if(numberRange[index].split() === 1)
+        numberRange[index].push("beep");
+    }
+    }if(numberInput) {
       numberRange.push(index);
     }
   }
