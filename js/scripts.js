@@ -18,11 +18,14 @@ $(document).ready(function() {
 
 function beepBoop(numberInput){
   var numberRange=[];
-  
+   
   for(var index=0; index<=numberInput;index++){
-    var exceptions=[1,2,3];
-    if(numberRange[index].includes(exceptions[0])){
-      numberRange[index].push("beep");
+  
+   
+    if(numberRange[index] == 1){
+      numberRange[index]="beep";
+      numberRange.append(numberRange[index]);
+      return numberRange;
     }else {
       numberRange.push(index);
     }
