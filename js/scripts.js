@@ -2,7 +2,7 @@ $(document).ready(function() {
   $("form#form").submit(function(event) {
     event.preventDefault();
     var numberInput =parseInt($("input#number").val());
-    $("div.result").text(beepBoop(numberInput));
+    $("div.result").text(beepBoop(numberInput)).show();
   });
 });
 function beepBoop(numberInput){
