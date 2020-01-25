@@ -7,7 +7,7 @@ $(document).ready(function() {
     
 
     $("div.result").text(beepBoop(numberInput));
-    console.log(beepBoop(numberInput));
+    //console.log(beepBoop(numberInput));
     //call beepBop() function on each word in the numberArr
     // for(var i = 0; i < numberArr.length; i++) {
     //   $(".output").append(" " + translate(wordArr[i]));
@@ -20,15 +20,9 @@ function beepBoop(numberInput){
   var numberRange=[];
    
   for(var index=0; index<=numberInput;index++){
-  
-   
-    if(numberRange[index] == 1){
-      numberRange[index]="beep";
-      numberRange.append(numberRange[index]);
-      return numberRange;
-    }else {
-      numberRange.push(index);
+    if(index.toString().includes("1")){
+      numberRange.push("beep");
+    }else numberRange.push(index);
     }
-    return numberRange;
+    return numberRange;console.log(numberRange);
   }
-}
