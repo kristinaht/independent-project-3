@@ -20,7 +20,9 @@ function beepBoop(numberInput){
   var numberRange=[];
    
   for(var index=0; index<=numberInput;index++){
-    if(index.toString().includes("1")){
+    if(index.toString().includes("2")){
+      numberRange.push("boop");
+    }else if(index.toString().includes("1")){
       numberRange.push("beep");
     }else numberRange.push(index);
     }
