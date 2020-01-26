@@ -15,8 +15,10 @@ function beepBoop(numberInput){
       numberRange.push("Boop!");
     }else if(index.toString().includes("1")){
       numberRange.push("Beep!");
-    }else {numberRange.push(index);
-    }
+    }else {
+      numberRange.push(index);
+    } 
     }
     return numberRange;
   }
+

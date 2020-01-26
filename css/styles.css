@@ -15,9 +15,7 @@
   color: rgb(9, 157, 177);
   font-size: 20px;
   font-family: helvetica;
-  text-align: center;
   background-image: url(../img/1.jpg);
-  
 }
 
 .resultdiv {
@@ -32,3 +30,7 @@
   font-family: verdana;
 }
 
+label {
+  background-color:whitesmoke;
+  padding: 3px;
+}
